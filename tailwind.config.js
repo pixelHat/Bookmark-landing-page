@@ -8,7 +8,12 @@ module.exports = {
       '2/10': '20%'
     },
     zIndex: {
-      '-1': '-1'
+      '-1': '-1',
+      '10': '10',
+      '20': '20'
+    },
+    opacity: {
+      '90': '.9',
     },
     fontFamily: {
       'rubik': ['Rubik']
