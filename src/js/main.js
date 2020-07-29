@@ -22,3 +22,13 @@ menus.forEach(menu => {
         }
     })
 })
+
+const collapses = document.querySelectorAll('[data-action="collapse"]')
+collapses.forEach(collapse => {
+    collapse.querySelectorAll('[data-link]').forEach(item => {
+        item.onclick = () => {
+            const content = collapse.querySelector(`${item.dataset.link}`)
+            content.classList.toggle('hidden')
+        }
+    })
+})
