@@ -8,3 +8,17 @@ menu.forEach(id => {
       document.querySelector('#logo').classList.toggle('text-white')
     }
 })
+
+const menus = document.querySelectorAll('[data-action="menu"]')
+menus.forEach(menu => {
+    menu.querySelectorAll('[data-link]').forEach(item => {
+        item.onclick = () => {
+            menu.querySelectorAll('[data-link]').forEach(item => {
+                const content = document.querySelector(`${item.dataset.link}`)
+                content.classList.add('hidden')
+            })
+            const content = document.querySelector(`${item.dataset.link}`)
+            content.classList.remove('hidden')
+        }
+    })
+})
