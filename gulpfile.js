@@ -31,9 +31,15 @@ gulp.task('pug', function() {
       .pipe(gulp.dest(htmlDist));
 });
 
+gulp.task('js', function() {
+  return gulp.src('./src/js/**/*.js')
+    .pipe(gulp.dest('./dist/js'));
+})
+
 gulp.task('watch', function () {
-  gulp.series('sass', 'css', 'pug')();
+  gulp.series('sass', 'css', 'pug', 'js')();
   gulp.watch('./src/sass/**/*.sass', gulp.series('sass'));
   gulp.watch('./src/css/**/*.css', gulp.series('css'));
   gulp.watch('./src/templates/**/*.pug', gulp.series('pug'));
+  gulp.watch('./src/js/**/*.js', gulp.series('js'));
 });
