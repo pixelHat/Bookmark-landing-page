@@ -32,3 +32,14 @@ collapses.forEach(collapse => {
         }
     })
 })
+
+const emailInput = document.querySelector('#input-email')
+emailInput.onchange = event => {
+    if (!event.target.validity.valid) {
+        emailInput.classList.add('bg-soft-red', 'p-1')
+        emailInput.querySelector('p').classList.remove('hidden')
+    } else {
+        emailInput.classList.remove('bg-soft-red', 'p-1')
+        emailInput.querySelector('p').classList.add('hidden')
+    }
+}
