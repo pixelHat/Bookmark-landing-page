@@ -7,7 +7,7 @@ html(lang="en")
     title Frontend Mentor | Bookmark landing page
     link(href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet")
     link(rel="stylesheet" href="../css/main.css")
-  body.font-rubik
+  body.font-rubik.overflow-x-hidden
     nav(class="relative z-20 container mx-auto")
       header(class="flex items-center px-8 py-8")
         span(id="logo" class="text-black-blue")
@@ -42,6 +42,7 @@ html(lang="en")
     article(class="flex flex-col lg:flex-row-reverse container mx-auto mt-16 relative z-0")
       section(class="relative")
         img(class="pb-8" src="../img/illustration-hero.svg" alt="")
+        div(class="absolute -z-1 inset-2/10 bottom-1/10 rounded-tl-full rounded-bl-full w-screen bg-soft-blue")
       article(class="px-8 max-w-lg text-center self-center lg:-mt-20 lg:text-left")
         h2(class="text-3xl text-black-blue font-medium capitalize leading-tight lg:text-4xl") A simple bookmark <br> manager
         p(class="text-normal text-grayish-blue mt-4") A clean and simple interface to organize your favorite website. Open a new browser tab and see you sites load instantly. Try it for free.
@@ -58,22 +59,24 @@ html(lang="en")
           li(class="border-b lg:border-0 border-soft-gray py-3 text-md hover:text-soft-red cursor-pointer" data-link="#speedy-searching") Speedy Searching
           li(class="border-b lg:border-0 border-soft-gray py-3 text-md hover:text-soft-red cursor-pointer" data-link="#easy-sharing") Easy Sharing
     ul
+    ul(class="relative")
+      div(class="absolute -z-1 inset-0 bottom-1/2 translate-y-10 lg:top-2/10 lg:-bottom-2/10 left-0 lg:right-1/2 transform -translate-x-16 lg:translate-y-4 rounded-tr-full rounded-br-full bg-soft-blue")
       li(id="simple-bookmarking" class="mt-16 mx-auto flex flex-col items-center justify-center lg:flex-row px-8")
-        article
+        article(class="relative")
           img(class="max-w-xs lg:max-w-md" src="../img/illustration-features-tab-1.svg" alt="")
-        article(class="mt-10 text-center max-w-sm lg:mt-0 lg:ml-24")
+        article(class="mt-32 text-center max-w-sm lg:mt-0 lg:ml-24")
           h2(class="text-3xl text-black-blue font-medium leading-tight lg:text-4xl") Bookmark in one click
           p(class="text-normal text-grayish-blue mt-4") Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
       li(id="speedy-searching" class="mt-16 mx-auto flex flex-col items-center justify-center lg:flex-row px-8 hidden")
         article
           img(class="max-w-xs lg:max-w-md" src="../img/illustration-features-tab-2.svg" alt="")
-        article(class="mt-10 text-center max-w-sm lg:mt-0 lg:ml-24")
+        article(class="mt-32 text-center max-w-sm lg:mt-0 lg:ml-24")
           h2(class="text-3xl text-black-blue font-medium leading-tight lg:text-4xl") Intelligent search
           p(class="text-normal text-grayish-blue mt-4") Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
       li(id="easy-sharing" class="mt-16 mx-auto flex flex-col items-center justify-center lg:flex-row px-8 hidden")
         article
           img(class="max-w-xs lg:max-w-md" src="../img/illustration-features-tab-3.svg" alt="")
-        article(class="mt-10 text-center max-w-sm lg:mt-0 lg:ml-24")
+        article(class="mt-32 text-center max-w-sm lg:mt-0 lg:ml-24")
           h2(class="text-3xl text-black-blue font-medium leading-tight lg:text-4xl") Share your bookmarks
           p(class="text-normal text-grayish-blue mt-4") Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
 
