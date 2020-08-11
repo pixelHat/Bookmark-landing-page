@@ -30,7 +30,9 @@ collapses.forEach(collapse => {
     collapse.querySelectorAll('[data-link]').forEach(item => {
         item.onclick = () => {
             const content = collapse.querySelector(`${item.dataset.link}`)
+            const arrow = collapse.querySelector('.arrow')
             content.classList.toggle('hidden')
+            arrow.classList.toggle('rotate-180')
         }
     })
 })
