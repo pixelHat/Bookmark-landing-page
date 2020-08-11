@@ -1,5 +1,5 @@
 doctype html
-html(lang="en")
+html(lang="en" class="overflow-x-hidden")
   head
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
@@ -54,11 +54,10 @@ html(lang="en")
       article(class="text-center max-w-xl mx-auto")
         h2(class="text-3xl text-black-blue font-medium capitalize leading-tight lg:text-4xl") Features
         p(class="text-normal text-grayish-blue mt-4") Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between websites. Your bookmarks sync between your devices so you can access them on the go.
-        ul(class="mt-8 pb-3 text-grayish-blue border-soft-gray font-medium flex flex-col lg:flex-row justify-between lg:border-b" data-action="menu")
-          li(class="border-b border-t border-soft-gray lg:border-0 py-3 text-md hover:text-soft-red cursor-pointer" data-link="#simple-bookmarking") Simple Bookmarking
-          li(class="border-b lg:border-0 border-soft-gray py-3 text-md hover:text-soft-red cursor-pointer" data-link="#speedy-searching") Speedy Searching
-          li(class="border-b lg:border-0 border-soft-gray py-3 text-md hover:text-soft-red cursor-pointer" data-link="#easy-sharing") Easy Sharing
-    ul
+        ul(class="mt-8 -mx-20 text-grayish-blue border-soft-gray font-medium flex flex-col lg:flex-row justify-between lg:border-b" data-action="menu")
+          li(class="features-menu-active border-b border-t border-soft-gray py-4 text-md hover:text-soft-red cursor-pointer flex-1 lg:pb-6 lg:border-0" data-link="#simple-bookmarking") Simple Bookmarking
+          li(class="border-b lg:border-0 border-soft-gray py-4 text-md hover:text-soft-red cursor-pointer flex-1" data-link="#speedy-searching") Speedy Searching
+          li(class="border-b lg:border-0 border-soft-gray py-4 text-md hover:text-soft-red cursor-pointer flex-1" data-link="#easy-sharing") Easy Sharing
     ul(class="relative")
       div(class="absolute -z-1 inset-0 bottom-1/2 translate-y-10 lg:top-2/10 lg:-bottom-2/10 left-0 lg:right-1/2 transform -translate-x-16 lg:translate-y-4 rounded-tr-full rounded-br-full bg-soft-blue")
       li(id="simple-bookmarking" class="mt-16 mx-auto flex flex-col items-center justify-center lg:flex-row px-8")

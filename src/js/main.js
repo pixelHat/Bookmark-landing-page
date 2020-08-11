@@ -16,9 +16,11 @@ menus.forEach(menu => {
             menu.querySelectorAll('[data-link]').forEach(item => {
                 const content = document.querySelector(`${item.dataset.link}`)
                 content.classList.add('hidden')
+                item.classList.remove('features-menu-active')
             })
             const content = document.querySelector(`${item.dataset.link}`)
             content.classList.remove('hidden')
+            item.classList.add('features-menu-active')
         }
     })
 })
@@ -43,3 +45,4 @@ emailInput.onchange = event => {
         emailInput.querySelector('p').classList.add('hidden')
     }
 }
+
