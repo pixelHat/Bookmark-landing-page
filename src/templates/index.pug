@@ -17,26 +17,26 @@ html(lang="en" class="overflow-x-hidden")
         img(id="close-menu" class="ml-auto hidden lg:hidden" src="../img/icon-close.svg")
         ul(class="text-sm ml-auto uppercase text-black-blue tracking-wider text-center items-center hidden lg:flex")
           li(class="ml-8")
-            a(class="hover:text-soft-red cursor-pointer" href="#s-feature") Features
+            a(class="transition duration-500 ease-in-out hover:text-soft-red cursor-pointer" href="#s-feature") Features
           li(class="ml-8")
-            a(class="hover:text-soft-red cursor-pointer" href="#s-pricing") Pricing
+            a(class="transition duration-500 ease-in-out hover:text-soft-red cursor-pointer" href="#s-pricing") Pricing
           li(class="ml-8")
-            a(class="hover:text-soft-red cursor-pointer" href="#s-contact") Contact
+            a(class="transition duration-500 ease-in-out hover:text-soft-red cursor-pointer" href="#s-contact") Contact
           li(class="ml-8")
-            a(class="text-white font-medium bg-soft-red w-full inline-block px-8 py-2 border border-soft-red rounded-md cursor-pointer hover:bg-white hover:text-soft-red mt-4 lg:mt-0 lg:ml-3 lg:w-auto" href="#") Login
+            a(class="transition duration-500 ease-in-out text-white font-medium bg-soft-red w-full inline-block px-8 py-2 border border-soft-red rounded-md cursor-pointer hover:bg-white hover:text-soft-red mt-4 lg:mt-0 lg:ml-3 lg:w-auto" href="#") Login
     article(id="menu-open-mobile" class="hidden flex flex-col justify-between px-8 bg-black-blue bg-opacity-90 text-white text-center pt-24 absolute z-10 inset-0")
       ul(class="divide-y-full")
         li(class="py-3 lg:m-0 lg:ml-8" data-toggle="close")
-          a(class="hover:text-soft-red cursor-pointer" href="#s-feature") Features
+          a(class="transition duration-500 ease-in-out hover:text-soft-red cursor-pointer" href="#s-feature") Features
         li(class="py-3 lg:m-0 lg:ml-8 hover:text-soft-red cursor-pointer") Pricing
         li(class="py-3 lg:m-0 lg:ml-8 hover:text-soft-red cursor-pointer") Contact
         li(class="border-b-0 py-3")
-          a(class="border rounded-md uppercase py-2 block") Login
+          a(class="transition duration-500 ease-in-out border rounded-md uppercase py-2 block") Login
       article(class="flex justify-center mb-10 border-b-0")
-        a(class="text-white mr-8 hover:text-soft-red" href="#")
+        a(class="transition duration-500 ease-in-out text-white mr-8 hover:text-soft-red" href="#")
           svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24")
             path(class="fill-current" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z")
-        a(class="text-white hover:text-soft-red" href="#")
+        a(class="transition duration-500 ease-in-out text-white hover:text-soft-red" href="#")
             svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24")
               path(class="fill-current" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z")
 
@@ -48,33 +48,32 @@ html(lang="en" class="overflow-x-hidden")
         h2(class="text-3xl text-black-blue font-medium capitalize leading-tight lg:text-4xl") A simple bookmark <br> manager
         p(class="text-normal text-grayish-blue mt-4") A clean and simple interface to organize your favorite website. Open a new browser tab and see you sites load instantly. Try it for free.
         article.mt-8
-          a(class="text-white bg-soft-blue inline-block px-3 py-3 rounded-md hover:bg-white hover:text-soft-blue hover:border-soft-blue cursor-pointer border mr-3") Get it on chrome
-          a(class="text-black-blue bg-gray inline-block px-3 py-3 rounded-md shadow-xl border border-white hover:border-black-blue hover:bg-white cursor-pointer hover:shadow-none") Get it on firefox
+          a(class="transition duration-500 ease-in-out text-white bg-soft-blue inline-block px-3 py-3 rounded-md hover:bg-white hover:text-soft-blue hover:border-soft-blue cursor-pointer border mr-3") Get it on chrome
+          a(class="transition duration-500 ease-in-out text-black-blue bg-gray inline-block px-3 py-3 rounded-md shadow-xl border border-white hover:border-black-blue hover:bg-white cursor-pointer hover:shadow-none") Get it on firefox
 
     article(id="s-feature" class="flex flex-col px-8 mt-32 animate__animated animate__fadeIn animate__slow")
       article(class="text-center max-w-xl mx-auto")
         h2(class="text-3xl text-black-blue font-medium capitalize leading-tight lg:text-4xl") Features
         p(class="text-normal text-grayish-blue mt-4") Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between websites. Your bookmarks sync between your devices so you can access them on the go.
         ul(class="mt-8 -mx-20 text-grayish-blue border-soft-gray font-medium flex flex-col lg:flex-row justify-between lg:border-b" data-action="menu")
-          li(class="features-menu-active border-b border-t border-soft-gray py-4 text-md hover:text-soft-red cursor-pointer flex-1 lg:pb-6 lg:border-0" data-link="#simple-bookmarking") Simple Bookmarking
-          li(class="border-b lg:border-0 border-soft-gray py-4 text-md hover:text-soft-red cursor-pointer flex-1" data-link="#speedy-searching") Speedy Searching
-          li(class="border-b lg:border-0 border-soft-gray py-4 text-md hover:text-soft-red cursor-pointer flex-1" data-link="#easy-sharing") Easy Sharing
-    // TODO: verificar isso
+          li(class="transition duration-500 ease-in-out features-menu-active border-b border-t border-soft-gray py-4 text-md hover:text-soft-red cursor-pointer flex-1 lg:pb-6 lg:border-0" data-link="#simple-bookmarking") Simple Bookmarking
+          li(class="transition duration-500 ease-in-out border-b lg:border-0 border-soft-gray py-4 text-md hover:text-soft-red cursor-pointer flex-1" data-link="#speedy-searching") Speedy Searching
+          li(class="transition duration-500 ease-in-out border-b lg:border-0 border-soft-gray py-4 text-md hover:text-soft-red cursor-pointer flex-1" data-link="#easy-sharing") Easy Sharing
     ul(class="relative animate__animated animate__fadeIn animate__slower")
       div(class="absolute -z-1 inset-0 bottom-1/2 translate-y-10 lg:top-2/10 lg:-bottom-2/10 left-0 lg:right-1/2 transform -translate-x-16 lg:translate-y-4 rounded-tr-full rounded-br-full bg-soft-blue")
-      li(id="simple-bookmarking" class="mt-16 mx-auto flex flex-col items-center justify-center lg:flex-row px-8")
+      li(id="simple-bookmarking" class="animate__animated animate__fadeIn mt-16 mx-auto flex flex-col items-center justify-center lg:flex-row px-8")
         article(class="relative")
           img(class="max-w-xs lg:max-w-md" src="../img/illustration-features-tab-1.svg" alt="")
         article(class="mt-32 text-center max-w-sm lg:mt-0 lg:ml-24")
           h2(class="text-3xl text-black-blue font-medium leading-tight lg:text-4xl") Bookmark in one click
           p(class="text-normal text-grayish-blue mt-4") Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
-      li(id="speedy-searching" class="mt-16 mx-auto flex flex-col items-center justify-center lg:flex-row px-8 hidden")
+      li(id="speedy-searching" class="animate__animated animate__fadeIn mt-16 mx-auto flex flex-col items-center justify-center lg:flex-row px-8 hidden")
         article
           img(class="max-w-xs lg:max-w-md" src="../img/illustration-features-tab-2.svg" alt="")
         article(class="mt-32 text-center max-w-sm lg:mt-0 lg:ml-24")
           h2(class="text-3xl text-black-blue font-medium leading-tight lg:text-4xl") Intelligent search
           p(class="text-normal text-grayish-blue mt-4") Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
-      li(id="easy-sharing" class="mt-16 mx-auto flex flex-col items-center justify-center lg:flex-row px-8 hidden")
+      li(id="easy-sharing" class="animate__animated animate__fadeIn animate__fast mt-16 mx-auto flex flex-col items-center justify-center lg:flex-row px-8 hidden")
         article
           img(class="max-w-xs lg:max-w-md" src="../img/illustration-features-tab-3.svg" alt="")
         article(class="mt-32 text-center max-w-sm lg:mt-0 lg:ml-24")
@@ -91,21 +90,21 @@ html(lang="en" class="overflow-x-hidden")
           p(class="mt-2 text-sm text-grayish-blue") Minimum version 62
           footer(class="mt-16")
             img(class="mb-6 w-full" src="../img/bg-dots.svg")
-            a(class="text-white bg-soft-blue inline-block px-3 py-3 border rounded-md hover:bg-white hover:text-soft-blue hover:border-soft-blue cursor-pointer") Add & Install Extension
+            a(class="transition duration-500 ease-in-out text-white bg-soft-blue inline-block px-3 py-3 border rounded-md hover:bg-white hover:text-soft-blue hover:border-soft-blue cursor-pointer") Add & Install Extension
         li(class="bg-white shadow-xl max-w-xs pt-16 pb-4 text-center mt-8 lg:ml-8 lg:mt-16 animate__animated animate__fadeInUp animate__delay-1/4s")
           img(class="mx-auto" src="../img/logo-firefox.svg" alt="")
           h4(class="mt-6 text-xl font-medium text-black-blue") Add to Firefox
           p(class="mt-2 text-sm text-grayish-blue") Minimum version 55
           footer(class="mt-16")
             img(class="mb-6 w-full" src="../img/bg-dots.svg")
-            a(class="text-white bg-soft-blue inline-block px-3 py-3 border rounded-md hover:bg-white hover:text-soft-blue hover:border-soft-blue cursor-pointer") Add & Install Extension
+            a(class="transition duration-500 ease-in-out text-white bg-soft-blue inline-block px-3 py-3 border rounded-md hover:bg-white hover:text-soft-blue hover:border-soft-blue cursor-pointer") Add & Install Extension
         li(class="bg-white shadow-xl max-w-xs pt-16 pb-4 text-center mt-8 lg:ml-8 lg:mt-32 animate__animated animate__fadeInUp")
           img(class="mx-auto" src="../img/logo-opera.svg" alt="")
           h4(class="mt-6 text-xl font-medium text-black-blue") Add to Opera
           p(class="mt-2 text-sm text-grayish-blue") Minimum version 46
           footer(class="mt-16")
             img(class="mb-6 w-full" src="../img/bg-dots.svg")
-            a(class="text-white bg-soft-blue inline-block px-3 py-3 border rounded-md hover:bg-white hover:text-soft-blue hover:border-soft-blue cursor-pointer") Add & Install Extension
+            a(class="transition duration-500 ease-in-out text-white bg-soft-blue inline-block px-3 py-3 border rounded-md hover:bg-white hover:text-soft-blue hover:border-soft-blue cursor-pointer") Add & Install Extension
 
     article(class="mt-48 px-8 text-center animate__animated animate__fadeInUp")
       h2(class="text-3xl text-black-blue font-medium leading-tight lg:text-4xl") Frequently Asked Questions
@@ -131,7 +130,7 @@ html(lang="en" class="overflow-x-hidden")
             h4(class="text-black-blue text-normal") What about other Chromium browsers?
             img(class="h-3 transform arrow" src="../img/icon-arrow.svg")
           p(id="faq4" class="text-normal text-grayish-blue mt-8 hidden") Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.
-      a(class="text-white bg-soft-blue inline-block px-3 py-3 rounded-md cursor-pointer hover:bg-white hover:text-soft-blue hover:border-soft-blue border mr-3 mt-5") More info
+      a(class="transition duration-500 ease-in-out text-white bg-soft-blue inline-block px-3 py-3 rounded-md cursor-pointer hover:bg-white hover:text-soft-blue hover:border-soft-blue border mr-3 mt-5") More info
 
     article(id="s-contact" class="mt-48 px-8 pt-12 pb-8 text-center bg-soft-blue lg:pb-12")
       div(class="max-w-lg mx-auto animate__animated animate__fadeIn")
@@ -141,21 +140,21 @@ html(lang="en" class="overflow-x-hidden")
           article(id="input-email" class="inline-block w-full rounded-md flex-1")
             input(class="inline-block w-full py-3 px-6 rounded-md border-soft-blue shadow-none appearance-none outline-none" type="email" placeholder="Enter your email address" required)
             p(class="text-left text-white text-xs ml-3 mt-1 hidden") Whoops, make sure it's an email
-          button(class="text-white font-medium bg-soft-red w-full inline-block px-3 py-3 border border-soft-red rounded-md cursor-pointer hover:bg-white hover:text-soft-red mt-4 lg:mt-0 lg:ml-3 lg:w-auto") Contact Us
+          button(class="transition duration-500 ease-in-out text-white font-medium bg-soft-red w-full inline-block px-3 py-3 border border-soft-red rounded-md cursor-pointer hover:bg-white hover:text-soft-red mt-4 lg:mt-0 lg:ml-3 lg:w-auto") Contact Us
 
     article(class="bg-black-blue py-8 lg:h-24 animate__animated animate__fadeInUp")
       article(class="flex flex-col lg:flex-row container mx-auto h-full lg:items-center lg:justify-between")
         span(id="logo" class="mt-6 w-40 mx-auto text-white lg:m-0")
           include ../svg/logo-bookmark.pug
         ul(class="mt-8 mx-auto uppercase text-white tracking-wider text-center lg:flex lg:mx-0 lg:mr-auto lg:ml-8 lg:mt-0")
-          li(class="hover:text-soft-red cursor-pointer") Features
-          li(class="mt-5 lg:m-0 lg:ml-8 hover:text-soft-red cursor-pointer") Pricing
-          li(class="mt-5 lg:m-0 lg:ml-8 hover:text-soft-red cursor-pointer") Contact
+          li(class="transition duration-500 ease-in-out hover:text-soft-red cursor-pointer") Features
+          li(class="transition duration-500 ease-in-out mt-5 lg:m-0 lg:ml-8 hover:text-soft-red cursor-pointer") Pricing
+          li(class="transition duration-500 ease-in-out mt-5 lg:m-0 lg:ml-8 hover:text-soft-red cursor-pointer") Contact
         div(class="flex justify-center mt-10 lg:m-0")
-          a(class="text-white mr-8 hover:text-soft-red" href="#")
+          a(class="transition duration-500 ease-in-out text-white mr-8 hover:text-soft-red" href="#")
             svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24")
               path(class="fill-current" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z")
-          a(class="text-white hover:text-soft-red" href="#")
+          a(class="transition duration-500 ease-in-out text-white hover:text-soft-red" href="#")
             svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24")
               path(class="fill-current" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z")
 
